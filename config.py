@@ -9,7 +9,7 @@
 SEGMENTS = [
     'time',
 # Show current virtual environment (see http://www.virtualenv.org/)
-#    'virtualenv',
+    'virtual_env',
 # Show the current user's username as in ordinary prompts
 #    'username',
 
@@ -28,7 +28,7 @@ SEGMENTS = [
     'read_only',
 
 # npm version
-    'nvm',
+#    'nvm',
 
 # Show the current git branch and status
     'git',
