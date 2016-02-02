@@ -5,15 +5,9 @@ def add_virtual_env_segment():
     if env is None:
         return
 
-    if os.path.basename(env) == "__":
-        dirName = os.path.dirname(env)
-        baseName = os.path.basename(dirName)
-        vEnv = "[%s]" % baseName
-    else:
-        baseName = os.path.basename(env)
-        vEnv = "(%s)" % baseName
+    env_name = os.path.basename(env)
     bg = Color.VIRTUAL_ENV_BG
     fg = Color.VIRTUAL_ENV_FG
-    powerline.append(vEnv, fg, bg)
+    powerline.append(' %s ' % env_name, fg, bg)
 
 add_virtual_env_segment()
